@@ -2,6 +2,11 @@
 <head> 
 <script> 
 
+
+function timedRefresh(timeoutPeriod) {
+    setTimeout("location.reload(true);",timeoutPeriod);
+}
+
 function changeImage()
 {
 var img = document.getElementById("image");
@@ -19,7 +24,7 @@ setInterval(function() {changeImage()}, 1000)
 </script>
 
 </head>
-<body>
+<body onload="JavaScript:timedRefresh(5000);">
 
 <h1> Hello World! <h1/> 
 <img id="image" src="Img/Smile.jpeg", width ="100"/>
