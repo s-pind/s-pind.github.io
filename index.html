@@ -1,1 +1,29 @@
-"Hello World" 
+<html> 
+<head> 
+<script> 
+
+function changeImage()
+{
+var img = document.getElementById("image");
+var og_path = (img.src).split("/");
+if (og_path.at(-1) == "Frown.png"){
+	img.src="Img/Smile.jpeg";
+} else {
+	img.src="Img/Frown.png";
+}
+return false;
+}
+
+setInterval(function() {changeImage()}, 1000)
+
+</script>
+
+</head>
+<body>
+
+<h1> Hello World! <h1/> 
+<img id="image" src="Img/Smile.jpeg", width ="100"/>
+<br><br><br>
+<button id="clickme" onclick="changeImage();">Click to change image!</button>
+</body>
+</html>
