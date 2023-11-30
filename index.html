@@ -25,7 +25,6 @@ function changeImage_2()
 var img = document.getElementById("image");
 <!--var img = new Image()--!>
 img.src = "https://github.com/s-pind/s-pind.github.io/blob/main/Img/GPS_map.png?raw=true"+ new Date().getTime();
-img_home.appendChild(img)
 return false;
 }
 
@@ -39,7 +38,7 @@ setInterval(function() {changeImage_2()}, 1000)
 <div id= "img_home"></div>
 
 <h1> Hello World! <h1/> 
-<img id="image" src="https://github.com/s-pind/s-pind.github.io/blob/main/Img/GPS_map.png", width ="100"/>
+<img id="image" src="https://github.com/s-pind/s-pind.github.io/blob/main/Img/GPS_map.png?raw=true", width ="100"/>
 <br><br><br>
 <button id="clickme" onclick="changeImage_2();">Click to change image!</button>
 </body>
